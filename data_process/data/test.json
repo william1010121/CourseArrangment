@@ -1,0 +1,470 @@
+{
+    "totalCount": 3,
+    "courses": [
+        {
+            "id": "526443ff-cad4-4023-aef1-94cfd317de18",
+            "serial": "23518",
+            "identifier": "MATH4008",
+            "code": "201 49830",
+            "name": "微積分3",
+            "notes": "本課程中文授課,使用英文教科書。密集課程。統一教學.一10為實習課.週末考試.",
+            "teacher": {
+                "id": "201196",
+                "name": "崔茂培",
+                "hostDepartment": "數學系",
+                "college": "理學院",
+                "jobTitle": "教授",
+                "websiteUrl": null,
+                "email": "maopei@math.ntu.edu.tw",
+                "phone": "02-33662832-",
+                "office": "天文數學館426室",
+                "info": null
+            },
+            "class": "01",
+            "courseTargets": [
+                {
+                    "department": {
+                        "id": "5070",
+                        "name": "材料科學與工程學系",
+                        "shortName": "材料系"
+                    },
+                    "courseType": "Grouped",
+                    "isCompulsory": true,
+                    "isPreallocated": false,
+                    "generalMarks": []
+                },
+                {
+                    "department": {
+                        "id": "7050",
+                        "name": "資訊管理學系",
+                        "shortName": "資管系"
+                    },
+                    "courseType": "Grouped",
+                    "isCompulsory": true,
+                    "isPreallocated": false,
+                    "generalMarks": []
+                },
+                {
+                    "department": {
+                        "id": "9010",
+                        "name": "電機工程學系",
+                        "shortName": "電機系"
+                    },
+                    "courseType": "Grouped",
+                    "isCompulsory": true,
+                    "isPreallocated": false,
+                    "generalMarks": []
+                },
+                {
+                    "department": {
+                        "id": "9020",
+                        "name": "資訊工程學系",
+                        "shortName": "資工系"
+                    },
+                    "courseType": "Grouped",
+                    "isCompulsory": true,
+                    "isPreallocated": false,
+                    "generalMarks": []
+                }
+            ],
+            "schedules": [
+                {
+                    "weekday": 1,
+                    "intervals": [
+                        "X"
+                    ],
+                    "classroom": {
+                        "id": "add6d958-514c-42ed-bdff-f8e5fd41eddd",
+                        "name": "普102",
+                        "location": "普通教室一樓                ",
+                        "buildingName": "普通教學館                           ",
+                        "buildingId": "AT1009  ",
+                        "accessibility": true,
+                        "layer": "build     ",
+                        "detail": "普通教學館102教室"
+                    }
+                },
+                {
+                    "weekday": 3,
+                    "intervals": [
+                        "6",
+                        "7"
+                    ],
+                    "classroom": {
+                        "id": "add6d958-514c-42ed-bdff-f8e5fd41eddd",
+                        "name": "普102",
+                        "location": "普通教室一樓                ",
+                        "buildingName": "普通教學館                           ",
+                        "buildingId": "AT1009  ",
+                        "accessibility": true,
+                        "layer": "build     ",
+                        "detail": "普通教學館102教室"
+                    }
+                },
+                {
+                    "weekday": 5,
+                    "intervals": [
+                        "6",
+                        "7"
+                    ],
+                    "classroom": {
+                        "id": "add6d958-514c-42ed-bdff-f8e5fd41eddd",
+                        "name": "普102",
+                        "location": "普通教室一樓                ",
+                        "buildingName": "普通教學館                           ",
+                        "buildingId": "AT1009  ",
+                        "accessibility": true,
+                        "layer": "build     ",
+                        "detail": "普通教學館102教室"
+                    }
+                }
+            ],
+            "isCommon": false,
+            "intensiveWeeks": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ],
+            "specializedPrograms": [],
+            "credits": 2,
+            "totalStudentQuota": 150,
+            "otherDepartmentsStudentQuota": 0,
+            "nonNtuStudentQuota": 0,
+            "changeItems": [],
+            "status": "Normal",
+            "enrollMethod": 3,
+            "studentGradeLimits": [
+                {
+                    "id": "CD1",
+                    "description": "限本系所學生(含輔系、雙修生)"
+                }
+            ],
+            "studentGradeLimitsJoinType": null,
+            "isEnglishTaught": false,
+            "precourseLimit": null,
+            "semester": "112-2",
+            "provider": "NTU",
+            "hostDepartment": "數學系",
+            "coreCapabilityUrlQuery": "&code=2010#201+49830",
+            "basicAttainmentUrlQuery": null,
+            "coolUrl": "https://cool.ntu.edu.tw/courses/35613",
+            "sdgIds": [],
+            "externalSyllabusUrl": null
+        },
+        {
+            "id": "b6a3a52f-ba57-4061-a528-5014fccb675c",
+            "serial": "86234",
+            "identifier": "MATH4008",
+            "code": "201 49830",
+            "name": "微積分3",
+            "notes": "本課程中文授課,使用英文教科書。密集課程。統一教學.一10為實習課.週末考試.",
+            "teacher": {
+                "id": "201241",
+                "name": "張志偉",
+                "hostDepartment": "數學系",
+                "college": "理學院",
+                "jobTitle": "研究學者",
+                "websiteUrl": null,
+                "email": null,
+                "phone": null,
+                "office": null,
+                "info": null
+            },
+            "class": "02",
+            "courseTargets": [
+                {
+                    "department": {
+                        "id": "5070",
+                        "name": "材料科學與工程學系",
+                        "shortName": "材料系"
+                    },
+                    "courseType": "Grouped",
+                    "isCompulsory": true,
+                    "isPreallocated": false,
+                    "generalMarks": []
+                },
+                {
+                    "department": {
+                        "id": "7050",
+                        "name": "資訊管理學系",
+                        "shortName": "資管系"
+                    },
+                    "courseType": "Grouped",
+                    "isCompulsory": true,
+                    "isPreallocated": false,
+                    "generalMarks": []
+                },
+                {
+                    "department": {
+                        "id": "9010",
+                        "name": "電機工程學系",
+                        "shortName": "電機系"
+                    },
+                    "courseType": "Grouped",
+                    "isCompulsory": true,
+                    "isPreallocated": false,
+                    "generalMarks": []
+                },
+                {
+                    "department": {
+                        "id": "9020",
+                        "name": "資訊工程學系",
+                        "shortName": "資工系"
+                    },
+                    "courseType": "Grouped",
+                    "isCompulsory": true,
+                    "isPreallocated": false,
+                    "generalMarks": []
+                }
+            ],
+            "schedules": [
+                {
+                    "weekday": 1,
+                    "intervals": [
+                        "X"
+                    ],
+                    "classroom": {
+                        "id": "7dbc992c-ca4c-48fa-825b-fd29757c107f",
+                        "name": "新102",
+                        "location": "新生教室一樓                ",
+                        "buildingName": "新生教學館                           ",
+                        "buildingId": "AT1020  ",
+                        "accessibility": true,
+                        "layer": "build     ",
+                        "detail": "新生教學館102教室"
+                    }
+                },
+                {
+                    "weekday": 3,
+                    "intervals": [
+                        "6",
+                        "7"
+                    ],
+                    "classroom": {
+                        "id": "7dbc992c-ca4c-48fa-825b-fd29757c107f",
+                        "name": "新102",
+                        "location": "新生教室一樓                ",
+                        "buildingName": "新生教學館                           ",
+                        "buildingId": "AT1020  ",
+                        "accessibility": true,
+                        "layer": "build     ",
+                        "detail": "新生教學館102教室"
+                    }
+                },
+                {
+                    "weekday": 5,
+                    "intervals": [
+                        "6",
+                        "7"
+                    ],
+                    "classroom": {
+                        "id": "7dbc992c-ca4c-48fa-825b-fd29757c107f",
+                        "name": "新102",
+                        "location": "新生教室一樓                ",
+                        "buildingName": "新生教學館                           ",
+                        "buildingId": "AT1020  ",
+                        "accessibility": true,
+                        "layer": "build     ",
+                        "detail": "新生教學館102教室"
+                    }
+                }
+            ],
+            "isCommon": false,
+            "intensiveWeeks": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ],
+            "specializedPrograms": [],
+            "credits": 2,
+            "totalStudentQuota": 150,
+            "otherDepartmentsStudentQuota": 0,
+            "nonNtuStudentQuota": 0,
+            "changeItems": [],
+            "status": "Normal",
+            "enrollMethod": 3,
+            "studentGradeLimits": [
+                {
+                    "id": "CD1",
+                    "description": "限本系所學生(含輔系、雙修生)"
+                }
+            ],
+            "studentGradeLimitsJoinType": null,
+            "isEnglishTaught": false,
+            "precourseLimit": null,
+            "semester": "112-2",
+            "provider": "NTU",
+            "hostDepartment": "數學系",
+            "coreCapabilityUrlQuery": "&code=2010#201+49830",
+            "basicAttainmentUrlQuery": null,
+            "coolUrl": "https://cool.ntu.edu.tw/courses/34650",
+            "sdgIds": [],
+            "externalSyllabusUrl": null
+        },
+        {
+            "id": "d3503054-ecbc-4605-8f1f-94142f1b53bf",
+            "serial": "78306",
+            "identifier": "MATH4008",
+            "code": "201 49830",
+            "name": "微積分3",
+            "notes": "本課程以英語授課。密集課程。統一教學.一10為實習課.週末考試.",
+            "teacher": {
+                "id": "201240",
+                "name": "蔡國榮",
+                "hostDepartment": "數學系",
+                "college": "理學院",
+                "jobTitle": "專案計畫助理教授",
+                "websiteUrl": "https://sites.google.com/site/tsoighaleo/",
+                "email": "kwokwingtsoi@ntu.edu.tw",
+                "phone": "--",
+                "office": "Room 432, Astro-Math Building",
+                "info": null
+            },
+            "class": "03",
+            "courseTargets": [
+                {
+                    "department": {
+                        "id": "5070",
+                        "name": "材料科學與工程學系",
+                        "shortName": "材料系"
+                    },
+                    "courseType": "Grouped",
+                    "isCompulsory": true,
+                    "isPreallocated": false,
+                    "generalMarks": []
+                },
+                {
+                    "department": {
+                        "id": "7050",
+                        "name": "資訊管理學系",
+                        "shortName": "資管系"
+                    },
+                    "courseType": "Grouped",
+                    "isCompulsory": true,
+                    "isPreallocated": false,
+                    "generalMarks": []
+                },
+                {
+                    "department": {
+                        "id": "9010",
+                        "name": "電機工程學系",
+                        "shortName": "電機系"
+                    },
+                    "courseType": "Grouped",
+                    "isCompulsory": true,
+                    "isPreallocated": false,
+                    "generalMarks": []
+                },
+                {
+                    "department": {
+                        "id": "9020",
+                        "name": "資訊工程學系",
+                        "shortName": "資工系"
+                    },
+                    "courseType": "Grouped",
+                    "isCompulsory": true,
+                    "isPreallocated": false,
+                    "generalMarks": []
+                }
+            ],
+            "schedules": [
+                {
+                    "weekday": 1,
+                    "intervals": [
+                        "X"
+                    ],
+                    "classroom": {
+                        "id": "4cc4ec33-f16d-486a-90ae-2d2bfb60c257",
+                        "name": "普101",
+                        "location": "普通教室一樓                ",
+                        "buildingName": "普通教學館                           ",
+                        "buildingId": "AT1009  ",
+                        "accessibility": true,
+                        "layer": "build     ",
+                        "detail": "普通教學館101教室"
+                    }
+                },
+                {
+                    "weekday": 3,
+                    "intervals": [
+                        "6",
+                        "7"
+                    ],
+                    "classroom": {
+                        "id": "4cc4ec33-f16d-486a-90ae-2d2bfb60c257",
+                        "name": "普101",
+                        "location": "普通教室一樓                ",
+                        "buildingName": "普通教學館                           ",
+                        "buildingId": "AT1009  ",
+                        "accessibility": true,
+                        "layer": "build     ",
+                        "detail": "普通教學館101教室"
+                    }
+                },
+                {
+                    "weekday": 5,
+                    "intervals": [
+                        "6",
+                        "7"
+                    ],
+                    "classroom": {
+                        "id": "4cc4ec33-f16d-486a-90ae-2d2bfb60c257",
+                        "name": "普101",
+                        "location": "普通教室一樓                ",
+                        "buildingName": "普通教學館                           ",
+                        "buildingId": "AT1009  ",
+                        "accessibility": true,
+                        "layer": "build     ",
+                        "detail": "普通教學館101教室"
+                    }
+                }
+            ],
+            "isCommon": false,
+            "intensiveWeeks": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ],
+            "specializedPrograms": [],
+            "credits": 2,
+            "totalStudentQuota": 130,
+            "otherDepartmentsStudentQuota": 0,
+            "nonNtuStudentQuota": 0,
+            "changeItems": [],
+            "status": "Normal",
+            "enrollMethod": 3,
+            "studentGradeLimits": [
+                {
+                    "id": "CD1",
+                    "description": "限本系所學生(含輔系、雙修生)"
+                }
+            ],
+            "studentGradeLimitsJoinType": null,
+            "isEnglishTaught": true,
+            "precourseLimit": null,
+            "semester": "112-2",
+            "provider": "NTU",
+            "hostDepartment": "數學系",
+            "coreCapabilityUrlQuery": "&code=2010#201+49830",
+            "basicAttainmentUrlQuery": null,
+            "coolUrl": "https://cool.ntu.edu.tw/courses/34211",
+            "sdgIds": [],
+            "externalSyllabusUrl": null
+        }
+    ]
+}
