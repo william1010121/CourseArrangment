@@ -23,6 +23,16 @@
         margin-right: auto;
     }
 
+    .graphviz-container {
+        width: 80%;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 </style>
 
 <body>
@@ -73,7 +83,19 @@
     <div class="col-lg-12">
         <h1><%=choose["grade"]%><%=choose["semester"]%>課表</h1> 
         <h2>總學分:<span id="credits">0</span></h2>
-        <h2>衝突課程:<span id="conflict"></span></h2>
+
+        <hr>
+        <div>
+            <h2>衝突課程:<span id="conflict"></span></h2>
+            <div class="graphviz-container">
+                <div id="graph" ></div>
+            </div>
+        </div><br>
+        <hr>
+
+
+
+
         <table class="table table-striped table-light table-bordered custom-table">
             <% let weekdays = ["星期一", "星期二", "星期三", "星期四", "星期五"]; 
                let classPeriod = ["1", "2", "3", "4","午休","5", "6", "7", "8", "9", "10"]; %>
@@ -97,16 +119,28 @@
         </table>
     </div>
 
+
     <!-- Bootstrap 需要的 JavaScript 和依赖 -->
     <script src="/static/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
+<script src="/static/@viz-js/viz/lib/viz-standalone.js"></script>
+<script>
+    Viz.instance().then(viz=>{
+        $("#graph").append(viz.renderSVGElement(`digraph { 
+            a[label="無衝突課程"];
+        }`));
+    });
+</script>
+
+
+
 <script>
     class Courses {
         constructor(courseList=[]) {
             this.courseList = courseList;
-            this.conflictList =new  Set();
+            this.conflictList = {};
         }
 
         cleanAll() {
@@ -115,21 +149,39 @@
                     $(`#weekday-${i}-period-${j}`).empty();
                 }
             }
-            $("#credits").text(0);
         }
 
         updateAll() {
-            this.conflictList.clear();
+            $("#credits").text(0);
+            this.conflictList =  {};
+            this.nameList =new Set();
             for( let i = 1; i <= 5; i++) {
                 for (let j = 1; j <= 10; j++) {
                     let queryString = `#weekday-${i}-period-${j}`;
                     let courses = $(queryString).children();
+
+                    courses.each((index, element) => {
+                        let courseName = $(element).attr("id");
+                        this.nameList.add(courseName);
+                    });
+
                     if (courses.length > 1) {
                         courses.css("color", "red");
 
+                        courses.each((index,element) => {
+                            if( this.conflictList[element.id] == undefined) {
+                                this.conflictList[element.id] = new Set();
+                            }
+                        });
+
                         courses.each((index, element) => {
                             let courseName = $(element).attr("id");
-                            this.conflictList.add(courseName);
+                            courses.each((index2, element2) => {
+                                let courseName2 = $(element2).attr("id");
+                                if (courseName != courseName2) {
+                                    this.conflictList[courseName].add(courseName2);
+                                }
+                            });
                         });
                     }
                     else {
@@ -137,6 +189,14 @@
                     }
                 }
             }
+
+
+            console.log("NAME", this.nameList);
+            Array.from(this.nameList).forEach((name) => {
+                let course = this.courseList.find((course) => course["name"] == name);
+                $("#credits").text(parseInt($("#credits").text()) + parseInt(course["credits"]));
+            });
+
             this.updateConflict();
         }
 
@@ -148,7 +208,6 @@
             $(`#courseSelectForm input[value=${name}]`).prop("checked", true);
 
             const teachName = courseParams["teacher"]["name"];
-            $("#credits").text(parseInt($("#credits").text()) + parseInt(courseParams["credits"]));
 
             courseParams["schedules"].forEach((schedule) => {
                 let intervals = schedule["intervals"];
@@ -183,7 +242,29 @@
         }
 
         updateConflict() {
-            $("#conflict").text(Array.from(this.conflictList).join(","));;
+            let conflictLine = {}
+            Object.keys(this.conflictList).forEach((key) => {
+                conflictLine[key] = [];
+            });
+
+            console.log(conflictLine, this.conflictList);
+            Viz.instance().then( viz=> {
+                let dot = "graph {";
+                for (let key in this.conflictList) {
+                    let value = this.conflictList[key];
+
+                    value.forEach((item) => {
+                        if( conflictLine[item].includes(key) ) 
+                            return;
+                        dot += `${key} -- ${item};`;
+                        conflictLine[key].push(item);
+                    });
+                }
+                dot += "}";
+                console.log(dot);
+                $("#graph").empty();
+                $("#graph").append(viz.renderSVGElement(dot));
+            });
         }
     };
 
